@@ -1,0 +1,10 @@
+# Configuração do Banco de Dados H2 em Memória
+spring.datasource.url=jdbc:h2:mem:taskdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Permite o acesso ao console do H2 no navegador
+spring.h2.console.enabled=true
+# O console estará disponível em http://localhost:8080/h2-console
